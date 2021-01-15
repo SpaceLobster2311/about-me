@@ -58,5 +58,12 @@ if(answer5th === 'yes' || answer5th === 'y'){
 }
 else if( answer5th !== 'yes' || answer5th !== 'y'){
   //console.log('Smart' + userName +);
-  alert('Smart' + userName + '' );
+  alert('Smart ' + userName + '' );
 }
+
+// template literal
+// While using template literal, you don't need to use an ' in your text. Also you will only use template literal if it
+// includes some javascript
+alert(`Goodbye, ${userName} I hope you enjoyed the site`);
+
+
