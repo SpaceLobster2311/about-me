@@ -19,4 +19,5 @@ p {
 }
 h1 {
     margin: 25px
+    text-decoration-line: underline;
 }
