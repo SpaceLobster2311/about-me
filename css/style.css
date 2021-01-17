@@ -11,9 +11,12 @@ body {
     width: 960px;
     margin: auto;
     border: 1px solid black;
-    
+
 }
 
 p {
     margin: 25px;
+}
+h1 {
+    margin: 25px
 }

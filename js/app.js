@@ -66,4 +66,31 @@ else if (answer5th !== 'yes' || answer5th !== 'y') {
 // includes some javascript
 alert(`Goodbye, ${userName} I hope you enjoyed the site`);
 
+let i = 1;
+let correctNumber = 23;
+for(i = 1; i < 6; i++){
+  var guess = parseInt(prompt('Pick a number between 1 and 100!'));
+  if(guess < correctNumber){
+    console.log('Higher bro');
+    alert('Higher bro');
+  }
+  if(guess > correctNumber){
+    console.log('Lower my dude');
+    alert('Lower my dude');
+  }
+  if(guess === correctNumber){
+    console.log('Gold star for you');
+    alert('Gold star for you');
+
+    break;
+  }
+
+  if(i === 5){
+    console.log('You lose it was 23');
+    break;
+  }
+
+}
+
+
 
