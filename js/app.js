@@ -2,6 +2,7 @@
 
 // write 5 questions. They must accept yes or no or y/n IN ANY CASE
 // examples: yes or YES or no or NO or y or Y or N or n.
+var totalScore = 0;
 var userName = prompt('Hey there, what\'s your name?');
 //console.log(userName);
 alert('Welcome to the page ' + userName + ' I have some question\'s for you.');
@@ -11,6 +12,7 @@ var answerSeattle = prompt('Do I live in Seattle?').toLowerCase();
 if (answerSeattle === 'yes' || answerSeattle === 'y') {
   //console.log('That would be right..');
   alert(' You\'re right. that\'s dope..');
+  totalScore++;
 }
 else if (answerSeattle !== 'yes' || answerSeattle !== 'y') {
   //console.log('Ah, well thats too bad');
@@ -22,6 +24,7 @@ var answerPizza = prompt('So ' + userName + ' Do you think I like pizza?').toLow
 if (answerPizza === 'yes' || answerPizza === 'y') {
   //console.log('That\'s good ' + userName + ' it seems like we can be freinds!');
   alert('That\'s good ' + userName + ' it seems like we can be friends!');
+  totalScore++;
 }
 else if (answerPizza !== 'yes' || answerPizza !== 'y') {
   //console.log('Well ' + userName + ' we are getting off to a rough start huh?');
@@ -33,6 +36,7 @@ var answerCats = prompt('Do you think I like cats over dogs?').toLowerCase();
 if (answerCats === 'yes' || answerCats === 'y') {
   //console.log('Well ' + userName + ' You are correcto');
   alert('Well ' + userName + ' You are correcto');
+  totalScore++;
 }
 else if (answerCats !== 'yes' || answerCats !== 'y') {
   //console.log('Wrong!');
@@ -44,6 +48,7 @@ var answerSkydiving = prompt('Do you think I\'ve been skydiving before?').toLowe
 if (answerSkydiving === 'no' || answerSkydiving === 'n') {
   //conole.log('You\'re right');
   alert('You\'re right');
+  totalScore++;
 }
 else if (answerSkydiving !== 'no' || answerSkydiving !== 'n') {
   //console.log('What\'re you crazy ' + userName + '! I hate flying, there\'s no way I\'d be jumping out of plane!');
@@ -59,12 +64,8 @@ if (answer5th === 'yes' || answer5th === 'y') {
 else if (answer5th !== 'yes' || answer5th !== 'y') {
   //console.log('Smart' + userName +);
   alert('Smart ' + userName + '');
+  totalScore++;
 }
-
-// template literal
-// While using template literal, you don't need to use an ' in your text. Also you will only use template literal if it
-// includes some javascript
-alert(`Goodbye, ${userName} I hope you enjoyed the site`);
 
 let i = 1;
 let correctNumber = 23;
@@ -81,6 +82,7 @@ for (i = 1; i < 6; i++) {
   if (guess === correctNumber) {
     console.log('Gold star for you');
     alert('Gold star for you');
+    totalScore++;
 
     break;
   }
@@ -92,13 +94,14 @@ for (i = 1; i < 6; i++) {
 
 }
 
-var favColors = ['blue', 'black', 'gray']
+var favColors = ['blue', 'black', 'gray'];
 
 for (i = 1; i < 7; i++) {
   var check = prompt('Guess one of my top 3 favorite colors').toLowerCase();
   if (favColors.includes(check)) {
     console.log('You are correct!');
     alert('You are correct');
+    totalScore++;
     break;
   }
   if (check !== favColors) {
@@ -113,5 +116,8 @@ for (i = 1; i < 7; i++) {
   }
 }
 
-
-
+alert('Lot\'s of question\'s and you got ' + totalScore + ' right!');
+// template literal
+// While using template literal, you don't need to use an ' in your text. Also you will only use template literal if it
+// includes some javascript
+alert(`Goodbye, ${userName} I hope you enjoyed the site`);
