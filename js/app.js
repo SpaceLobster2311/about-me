@@ -8,28 +8,36 @@ var userName = prompt('Hey there, what\'s your name?');
 alert('Welcome to the page ' + userName + ' I have some question\'s for you.');
 
 //question 1
-var answerSeattle = prompt('Do I live in Seattle?').toLowerCase();
-if (answerSeattle === 'yes' || answerSeattle === 'y') {
-  //console.log('That would be right..');
-  alert(' You\'re right. that\'s dope..');
-  totalScore++;
-}
-else if (answerSeattle !== 'yes' || answerSeattle !== 'y') {
-  //console.log('Ah, well thats too bad');
-  alert('Ah wrong, well thats too bad');
+function seattle() {
+  var answerSeattle = prompt('Do I live in Seattle?').toLowerCase();
+  if (answerSeattle === 'yes' || answerSeattle === 'y') {
+    //console.log('That would be right..');
+    alert(' You\'re right. that\'s dope..');
+    totalScore++;
+  }
+  else if (answerSeattle !== 'yes' || answerSeattle !== 'y') {
+    //console.log('Ah, well thats too bad');
+    alert('Ah wrong, well thats too bad');
+  }
 }
 
+seattle();
+
 //question 2
-var answerPizza = prompt('So ' + userName + ' Do you think I like pizza?').toLowerCase();
-if (answerPizza === 'yes' || answerPizza === 'y') {
+function pizza() {
+
+  var answerPizza = prompt('So ' + userName + ' Do you think I like pizza?').toLowerCase();
+  if (answerPizza === 'yes' || answerPizza === 'y') {
   //console.log('That\'s good ' + userName + ' it seems like we can be freinds!');
-  alert('That\'s good ' + userName + ' it seems like we can be friends!');
-  totalScore++;
-}
-else if (answerPizza !== 'yes' || answerPizza !== 'y') {
+    alert('That\'s good ' + userName + ' it seems like we can be friends!');
+    totalScore++;
+  }
+  else if (answerPizza !== 'yes' || answerPizza !== 'y') {
   //console.log('Well ' + userName + ' we are getting off to a rough start huh?');
-  alert('Well ' + userName + ' we are getting off to a rough start huh?');
+    alert('Well ' + userName + ' we are getting off to a rough start huh?');
+  }
 }
+pizza();
 
 //question 3
 var answerCats = prompt('Do you think I like cats over dogs?').toLowerCase();
