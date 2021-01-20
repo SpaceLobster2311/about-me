@@ -83,36 +83,38 @@ function fifth(){
   }
 }
 fifth();
+function correctNumber(){
+  let i = 1;
+  let correctNumber = 23;
+  for (i = 1; i < 6; i++) {
+    var guess = parseInt(prompt('Pick a number between 1 and 100!'));
+    if (guess < correctNumber) {
+      console.log('Higher bro');
+      alert('Higher bro');
+    }
+    if (guess > correctNumber) {
+      console.log('Lower my dude');
+      alert('Lower my dude');
+    }
+    if (guess === correctNumber) {
+      console.log('Gold star for you');
+      alert('Gold star for you');
+      totalScore++;
 
-let i = 1;
-let correctNumber = 23;
-for (i = 1; i < 6; i++) {
-  var guess = parseInt(prompt('Pick a number between 1 and 100!'));
-  if (guess < correctNumber) {
-    console.log('Higher bro');
-    alert('Higher bro');
-  }
-  if (guess > correctNumber) {
-    console.log('Lower my dude');
-    alert('Lower my dude');
-  }
-  if (guess === correctNumber) {
-    console.log('Gold star for you');
-    alert('Gold star for you');
-    totalScore++;
+      break;
+    }
 
-    break;
-  }
+    if (i === 5) {
+      console.log('You lose it was 23');
+      break;
+    }
 
-  if (i === 5) {
-    console.log('You lose it was 23');
-    break;
   }
-
 }
+correctNumber();
 
 var favColors = ['blue', 'black', 'gray'];
-
+let i = 0;
 for (i = 1; i < 7; i++) {
   var check = prompt('Guess one of my top 3 favorite colors').toLowerCase();
   if (favColors.includes(check)) {
