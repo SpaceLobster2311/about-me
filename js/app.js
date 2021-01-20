@@ -70,16 +70,19 @@ function skyDiving() {
 skyDiving();
 
 //question 5
-var answer5th = prompt('Do you think I could think of a 5th question to ask you about me?').toLowerCase();
-if (answer5th === 'yes' || answer5th === 'y') {
-  //console.log('ha! No way' + userName + );
-  alert('ha! No way' + userName + '');
+function fifth(){
+  var answer5th = prompt('Do you think I could think of a 5th question to ask you about me?').toLowerCase();
+  if (answer5th === 'yes' || answer5th === 'y') {
+    //console.log('ha! No way' + userName + );
+    alert('ha! No way' + userName + '');
+  }
+  else if (answer5th !== 'yes' || answer5th !== 'y') {
+    //console.log('Smart' + userName +);
+    alert('Smart ' + userName + '');
+    totalScore++;
+  }
 }
-else if (answer5th !== 'yes' || answer5th !== 'y') {
-  //console.log('Smart' + userName +);
-  alert('Smart ' + userName + '');
-  totalScore++;
-}
+fifth();
 
 let i = 1;
 let correctNumber = 23;
