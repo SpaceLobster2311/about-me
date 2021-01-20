@@ -8,16 +8,20 @@ var userName = prompt('Hey there, what\'s your name?');
 alert('Welcome to the page ' + userName + ' I have some question\'s for you.');
 
 //question 1
-var answerSeattle = prompt('Do I live in Seattle?').toLowerCase();
-if (answerSeattle === 'yes' || answerSeattle === 'y') {
-  //console.log('That would be right..');
-  alert(' You\'re right. that\'s dope..');
-  totalScore++;
+function seattle() {
+  var answerSeattle = prompt('Do I live in Seattle?').toLowerCase();
+  if (answerSeattle === 'yes' || answerSeattle === 'y') {
+    //console.log('That would be right..');
+    alert(' You\'re right. that\'s dope..');
+    totalScore++;
+  }
+  else if (answerSeattle !== 'yes' || answerSeattle !== 'y') {
+    //console.log('Ah, well thats too bad');
+    alert('Ah wrong, well thats too bad');
+  }
 }
-else if (answerSeattle !== 'yes' || answerSeattle !== 'y') {
-  //console.log('Ah, well thats too bad');
-  alert('Ah wrong, well thats too bad');
-}
+
+seattle();
 
 //question 2
 var answerPizza = prompt('So ' + userName + ' Do you think I like pizza?').toLowerCase();
