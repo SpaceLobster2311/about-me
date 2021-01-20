@@ -112,28 +112,29 @@ function correctNumber(){
   }
 }
 correctNumber();
-
-var favColors = ['blue', 'black', 'gray'];
-let i = 0;
-for (i = 1; i < 7; i++) {
-  var check = prompt('Guess one of my top 3 favorite colors').toLowerCase();
-  if (favColors.includes(check)) {
-    console.log('You are correct!');
-    alert('You are correct');
-    totalScore++;
-    break;
-  }
-  if (check !== favColors) {
-    console.log('Try again!');
-    alert('Try again');
-
-  }
-  if (i === 6) {
-    console.log('okay thats enough.');
-    alert('okay thats enough.');
-    break;
+function colors(){
+  var favColors = ['blue', 'black', 'gray'];
+  let i = 0;
+  for (i = 1; i < 7; i++) {
+    var check = prompt('Guess one of my top 3 favorite colors').toLowerCase();
+    if (favColors.includes(check)) {
+      console.log('You are correct!');
+      alert('You are correct');
+      totalScore++;
+      break;
+    }
+    if (check !== favColors) {
+      console.log('Try again!');
+      alert('Try again');
+    }
+    if (i === 6) {
+      console.log('okay thats enough.');
+      alert('okay thats enough.');
+      break;
+    }
   }
 }
+colors();
 
 alert('Lot\'s of question\'s and you got ' + totalScore + ' right!');
 // template literal
