@@ -40,16 +40,19 @@ function pizza() {
 pizza();
 
 //question 3
-var answerCats = prompt('Do you think I like cats over dogs?').toLowerCase();
-if (answerCats === 'yes' || answerCats === 'y') {
-  //console.log('Well ' + userName + ' You are correcto');
-  alert('Well ' + userName + ' You are correcto');
-  totalScore++;
+function cats() {
+  var answerCats = prompt('Do you think I like cats over dogs?').toLowerCase();
+  if (answerCats === 'yes' || answerCats === 'y') {
+    //console.log('Well ' + userName + ' You are correcto');
+    alert('Well ' + userName + ' You are correcto');
+    totalScore++;
+  }
+  else if (answerCats !== 'yes' || answerCats !== 'y') {
+    //console.log('Wrong!');
+    alert('Wrong!');
+  }
 }
-else if (answerCats !== 'yes' || answerCats !== 'y') {
-  //console.log('Wrong!');
-  alert('Wrong!');
-}
+cats();
 
 //question 4
 var answerSkydiving = prompt('Do you think I\'ve been skydiving before?').toLowerCase();
