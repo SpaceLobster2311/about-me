@@ -2,18 +2,16 @@
 
 ## LAB - 02
 
-## Project Name
+## Get to know me
 
-I built an app with a direct and powerful purpose. My app does all of the things that it accomplishes well. Here  I describe the purpose and functionality so those that visit my README understand the app.
+This Project is displaying a web page that asks and keeps track of seven different questions.  At the end it will display how many you've answered correctly. 
 
 ### Author: Alexander Williams
 
 ### Links and Resources
 
-* [submission PR](http://xyz.com)
-* Any Links you used as reference
 
 ### Reflections and Comments
 
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+* Today was about learning new concepts alone. I utilized many things that we did not learn in class.  As a result of trail and error, exploring creative code and persistance, I feel like learned much more past the foundations of the lecture. 
+* Repl has been a great resource for playtesting code quickly before placing it in my VScode file. 
