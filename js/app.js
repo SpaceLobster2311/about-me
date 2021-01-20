@@ -55,16 +55,19 @@ function cats() {
 cats();
 
 //question 4
-var answerSkydiving = prompt('Do you think I\'ve been skydiving before?').toLowerCase();
-if (answerSkydiving === 'no' || answerSkydiving === 'n') {
-  //conole.log('You\'re right');
-  alert('You\'re right');
-  totalScore++;
+function skyDiving() {
+  var answerSkydiving = prompt('Do you think I\'ve been skydiving before?').toLowerCase();
+  if (answerSkydiving === 'no' || answerSkydiving === 'n') {
+    //conole.log('You\'re right');
+    alert('You\'re right');
+    totalScore++;
+  }
+  else if (answerSkydiving !== 'no' || answerSkydiving !== 'n') {
+    //console.log('What\'re you crazy ' + userName + '! I hate flying, there\'s no way I\'d be jumping out of plane!');
+    alert('What\'re you crazy ' + userName + '! I hate flying, there\'s no way I\'d be jumping out of plane!');
+  }
 }
-else if (answerSkydiving !== 'no' || answerSkydiving !== 'n') {
-  //console.log('What\'re you crazy ' + userName + '! I hate flying, there\'s no way I\'d be jumping out of plane!');
-  alert('What\'re you crazy ' + userName + '! I hate flying, there\'s no way I\'d be jumping out of plane!');
-}
+skyDiving();
 
 //question 5
 var answer5th = prompt('Do you think I could think of a 5th question to ask you about me?').toLowerCase();
